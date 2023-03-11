@@ -47,3 +47,7 @@ type StockLimit struct {
 func (StockLimit) TableName() string {
 	return "stock_limit"
 }
+
+func init() {
+	set("StockLimit", StockLimit{})
+}
